@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Collections.Generic;
 using System.Web.Http;
 
-namespace WebAPISample.Controllers
+namespace WebAPI.Swagger.Controllers.v1
 {
-    public class ValuesController : ApiController
+    /// <summary>
+    /// Employee Controller
+    /// </summary>
+    public class EmployeeController : ApiController
     {
         // GET api/values
         /// <summary>
@@ -16,7 +15,7 @@ namespace WebAPISample.Controllers
         /// <returns></returns>
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "Employee 1", "Employee 2" };
         }
 
         // GET api/values/5
@@ -27,12 +26,13 @@ namespace WebAPISample.Controllers
         /// <returns></returns>
         public string Get(int id)
         {
-            return "value";
+            return $"Employee {id.ToString()}";
         }
 
         // POST api/values
         public void Post([FromBody]string value)
         {
+
         }
 
         // PUT api/values/5

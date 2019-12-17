@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
 
-namespace WebAPISample
+namespace WebAPI.Swagger
 {
+    /// <summary>
+    /// WebApi Config
+    /// </summary>
     public static class WebApiConfig
     {
+        /// <summary>
+        /// Register Config
+        /// </summary>
+        /// <param name="config"></param>
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
